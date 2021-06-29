@@ -1,6 +1,6 @@
 fun main() {
-    val cardName = "Visa"
-    val transactions = 125000
+    val cardName = "VkPay"
+    val transactions = 56000
     val transactionsMonth = 90000
 
     val access = accessAllowCalc(cardName, transactions, transactionsMonth)
@@ -16,7 +16,7 @@ fun comissionCalc(cardName: String, access: Boolean, transactions: Int): String 
     }
 }
 
-private fun visaMirCalc(cardName: String, access: Boolean, transactions: Int): String {
+fun visaMirCalc(cardName: String, access: Boolean, transactions: Int): String {
     return if (access && (transactions * 0.00075) < 35.0) {
         "Комиссия по карте $cardName составила ${(transactions * 0.0) + 35.0} рублей"
     } else if (access && (transactions * 0.00075) > 35.0) {
