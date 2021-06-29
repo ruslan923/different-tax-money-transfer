@@ -84,7 +84,7 @@ class MainKtTest {
             transactions = transactions,
             transactionsMonth = transactionsMonth
         )
-        assertEquals(true, result)
+        assertEquals(false, result)
     }
 
     @Test
@@ -98,7 +98,7 @@ class MainKtTest {
             transactions = transactions,
             transactionsMonth = transactionsMonth
         )
-        assertEquals(false, result)
+        assertEquals(true, result)
     }
 
     @Test
